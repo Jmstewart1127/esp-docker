@@ -28,7 +28,7 @@ case $1 in
                 docker run -it $ADF_CONTAINER_NAME ls /opt/adf/examples/"${@:3}"
                 ;;
             "cp")
-                docker cp $ADF_CONTAINER_NAME:/opt/adf/examples/"${@:3}" $PROJECT_DIR/"${@:4}"
+                docker cp $ADF_CONTAINER_NAME:/opt/adf/examples/"$3" $PROJECT_DIR/"$4"
                 ;;
         esac
         ;;
