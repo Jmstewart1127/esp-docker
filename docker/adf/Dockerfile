@@ -1,6 +1,6 @@
 ARG IDF_VERSION=release/v4.4
 
-FROM ubuntu:21.04 as distro
+FROM ubuntu:latest as distro
 RUN apt-get update -y
 
 # FROM distro as esp
